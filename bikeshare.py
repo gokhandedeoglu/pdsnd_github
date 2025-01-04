@@ -95,7 +95,6 @@ def time_stats(df):
 
     print("The most common day is: ", df['day_of_week'].value_counts().idxmax())
 
-    # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     print("The most common hour is: ", df['hour'].value_counts().idxmax())
 
