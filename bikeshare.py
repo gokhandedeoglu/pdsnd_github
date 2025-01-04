@@ -151,14 +151,12 @@ def user_stats(df):
     user_types = df['User Type'].value_counts()
     print(user_types)
 
-    # TO DO: Display counts of gender
     try:
         user_gender = df['Gender'].value_counts()
         print(user_gender)
     except:
         print('Sorry, no gender data available')
 
-    # TO DO: Display earliest, most recent, and most common year of birth
     try:
         earliest_year_of_birth = int(df['Birth Year'].min())
         most_recent_year_of_birth = int(df['Birth Year'].max())
